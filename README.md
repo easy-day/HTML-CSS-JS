@@ -1,3 +1,2 @@
 Hello Atom git test
-:Q
-:Wq
+두번째 테스트
