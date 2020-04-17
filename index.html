@@ -6,15 +6,15 @@
     </head>
     <body>
         <script>
-           function get_member1() {
-               return  'park';
+           function get_member1(arg1, arg2) { 
+               return  arg1+arg2;
            }
-           function get_member2() {
-               return 'ji';
-           }
-          alert(get_number1());
-          alert(get_member2());
-
+          
+          alert(get_member1(10, 20)); //get_member(10)은 arg1, (20)은 arg2에 각 값을 전달하겠다는 의미이다.
+          alert(get_member1(30, 40));
         </script>
     </body>
     </html>
+    //인자란?
+    인자(argument)는 함수로 유입되는 입력 값을 의미하는데, 어떤 값을 인자로 전달하느냐에 따라서 함수가 반환하는 값이나 메소드의
+    동작방법을 다르게 할 수 있다.
