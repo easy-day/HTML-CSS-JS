@@ -6,19 +6,18 @@
     </head>
     <body>
         <script>
-         function get_member() {
-             return ['park', 'JI', 'HUn'];
-         }
-         members=get_member();
+         var li = ['a', 'b', 'c', 'd'];
+         li.push('e'); //배열의 끝에 원소를 추가하는 방법이다. push는 인자로 전달된 값을 배열(li)에 추가하는 명령어다.
+         alert(li);
 
-         for(var i=0; i < members.length; i++){
-             document.write(members[i].toUpperCase());
-             document.write('<br />');
-         }
+         var ab = ['p','a','r'];
+         ab.unshift('k'); // 배열의 시작점에 원소를 추가하는 방법이다. 배열 as는 k p a r이 되었다. unshift는 인자로 전달한 값을 배열의 첫번째 원소로 추가하고 배열의 기존 값들의 색인을 1씩 증가시킨다.
+         alert(ab);
 
-        // var arr=[1,2,3,4,];
-        // alert(arr.length);
+         var as = ['p','a','r','k','j','h'];
+         as.splice(5, 0, 'i'); // 다섯번째 인덱스 뒤에 i를 넣고 싶다면, splice는 첫번째 인자에 해당하는 원소부터 다섯번째 인자에 해당하는 원소의 숫자 만큼의 값을 배열로부터 제거한 후에 리턴한다. 
+         alert(as); 
         </script>
     </body>
     </html>
-    // 반복문으로 리스트에 담긴 정보를 하나씩 꺼내보는 코드
+    
